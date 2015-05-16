@@ -8,7 +8,7 @@ $db = substr($url["path"], 1);
 
 $conn = new mysqli($server, $username, $password, $db);
 
-echo "Hello World. I will use you soon.";
+echo "Hello World. I will use you soon. This is a github deploy";
 
 $conn -> close();
 ?>

@@ -55,18 +55,16 @@
     </div>
   </div>
 
-  <!-- Home Page Slick -->
-  <div class="image-slick">
-    <div>
-      <img src="img/black-bike.jpg" style="width:100%">
-    </div>
-    <div>
-      <img src="img/silver-bike.jpg" style="width:100%">
-    </div>
-    <div>
-      <img src="img/red-bike.jpg" style="width:100%">
-    </div>
-  </div>
+  <?php
+  $url=parse_url(getenv( "CLEARDB_DATABASE_URL"));
+  $server=$url[ "host"];
+  $username=$url[ "user"];
+  $password=$url[ "pass"];
+  $db=substr($url[ "path"], 1);
+  $conn=new mysqli($server, $username, $password, $db);
+  echo "Hello World. I will use you soon. This is a github deploy";
+  $conn -> close();
+  ?>
 
 
   <script src="js/vendor/jquery.js"></script>
@@ -74,13 +72,6 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
   <script>
     $(document).foundation();
-  </script>
-  <script>
-    $(document).ready(function() {
-      $('.image-slick').slick({
-        autoplay: true
-      });
-    });
   </script>
 </body>
 

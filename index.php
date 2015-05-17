@@ -36,19 +36,8 @@
           <li><a href="about.php">About</a></li>
           <li><a href="bikes.php">Bikes</a></li>
           <li><a href="contact.php">Contact</a></li>
+          <li><a href="faq.php">FAQ</a></li>
         </ul>
-
-        <!-- Right Nav Section
-        <ul class="right">
-          <li class="active"><a href="#">Right Button Active</a></li>
-          <li class="has-dropdown">
-            <a href="#">Right Button Dropdown</a>
-            <ul class="dropdown">
-              <li><a href="#">First link in dropdown</a></li>
-              <li class="active"><a href="#">Active link in dropdown</a></li>
-            </ul>
-          </li>
-        </ul>-->
 
       </section>
     </nav>
@@ -69,39 +58,26 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <div class="callout panel">
-        <p>
-          <strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-      </div>
+        <h1 class="text-center"><strong>Latest News</strong></h1>
     </div>
   </div>
+
   <div class="row">
-    <div class="large-6 medium-6 columns">
-      <div class="callout panel">
-        <p>Six columns</p>
-      </div>
+    <div class="small-12 large-6 columns">
+      <h2>Hello</h2>
+      <p>Bacon ipsum dolor amet swine tongue prosciutto doner. Bacon bresaola alcatra prosciutto shankle swine pork sirloin drumstick ham hock salami pork loin kevin jerky. Tri-tip bresaola tail, filet mignon fatback pastrami ham kielbasa ribeye tongue meatloaf.
+        Leberkas pork belly bresaola boudin ribeye, beef ribs prosciutto swine shank hamburger landjaeger spare ribs picanha. Rump boudin pastrami, filet mignon frankfurter leberkas tail. Chuck jerky corned beef ribeye, prosciutto doner picanha.</p>
+
+      <p>Landjaeger andouille kevin meatball. Bacon brisket beef ribs frankfurter ham boudin chuck shankle meatball turducken doner spare ribs meatloaf pork chop. Flank biltong hamburger shoulder chuck bresaola jowl t-bone drumstick spare ribs tenderloin
+        kevin pastrami ribeye. Bresaola ham hock venison, pork loin tongue t-bone frankfurter tail pig.</p>
     </div>
-    <div class="large-6 medium-6 columns">
-      <div class="callout panel">
-        <p>Six columns</p>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="large-4 medium-4 small-4 columns">
-      <div class="callout panel">
-        <p>Four columns</p>
-      </div>
-    </div>
-    <div class="large-4 medium-4 small-4 columns">
-      <div class="callout panel">
-        <p>Four columns</p>
-      </div>
-    </div>
-    <div class="large-4 medium-4 small-4 columns">
-      <div class="callout panel">
-        <p>Four columns</p>
-      </div>
+    <div class="small-12 large-6 columns">
+      <h2>BACON!</h2>
+      <p>Bacon ipsum dolor amet swine tongue prosciutto doner. Bacon bresaola alcatra prosciutto shankle swine pork sirloin drumstick ham hock salami pork loin kevin jerky. Tri-tip bresaola tail, filet mignon fatback pastrami ham kielbasa ribeye tongue meatloaf.
+        Leberkas pork belly bresaola boudin ribeye, beef ribs prosciutto swine shank hamburger landjaeger spare ribs picanha. Rump boudin pastrami, filet mignon frankfurter leberkas tail. Chuck jerky corned beef ribeye, prosciutto doner picanha.</p>
+
+      <p>Landjaeger andouille kevin meatball. Bacon brisket beef ribs frankfurter ham boudin chuck shankle meatball turducken doner spare ribs meatloaf pork chop. Flank biltong hamburger shoulder chuck bresaola jowl t-bone drumstick spare ribs tenderloin
+        kevin pastrami ribeye. Bresaola ham hock venison, pork loin tongue t-bone frankfurter tail pig.</p>
     </div>
   </div>
 

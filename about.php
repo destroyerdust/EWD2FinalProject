@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Foundation | Welcome</title>
+  <title>Spin-it Cycle Shope | Welcome</title>
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
@@ -33,58 +33,28 @@
         <!-- Left Nav Section -->
         <ul class="left">
           <li><a href="index.php">Home</a></li>
-          <li><a href="about.php">About</a></li>
-          <li class="active"><a href="bikes.php">Bikes</a></li>
+          <li class="active"><a href="about.php">About</a></li>
+          <li><a href="bikes.php">Bikes</a></li>
           <li><a href="contact.php">Contact</a></li>
           <li><a href="faq.php">FAQ</a></li>
         </ul>
-
-        <!-- Right Nav Section
-        <ul class="right">
-          <li class="active"><a href="#">Right Button Active</a></li>
-          <li class="has-dropdown">
-            <a href="#">Right Button Dropdown</a>
-            <ul class="dropdown">
-              <li><a href="#">First link in dropdown</a></li>
-              <li class="active"><a href="#">Active link in dropdown</a></li>
-            </ul>
-          </li>
-        </ul>-->
-
       </section>
     </nav>
   </div>
 
-  <!-- Home Page Welcome -->
   <div class="row">
     <div class="large-12 columns">
-      <h1>Welcome to Foundation</h1>
+      <div class="callout panel">
+        <p>
+          <strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+      </div>
     </div>
   </div>
 
-  <?php
-  $url=parse_url(getenv( "CLEARDB_DATABASE_URL"));
-  $server=$url[ "host"];
-  $username=$url[ "user"];
-  $password=$url[ "pass"];
-  $db=substr($url[ "path"], 1);
-  $conn=new mysqli($server, $username, $password, $db);
-  echo "Hello World. I will use you soon. This is a github deploy";
-  $conn -> close();
-  ?>
-
-  <div class="row">
-    <div class="small-12 medium-3 large-3 columns">
-      <img src="img/1-series.png">
-    </div>
-    <div class="small-12 medium-3 large-3 columns">
-      <img src="img/emonda.png">
-    </div>
-    <div class="small-12 medium-3 large-3 columns">
-      <img src="img/emonda-alr.png">
-    </div>
-    <div class="small-12 medium-3 large-3 columns">
-      <img src="img/madone.png">
+  <!-- About Page map of Pittsford -->
+  <div class="row show-for-medium-up">
+    <div class="google-maps">
+      <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Pittsford%2C%20NY%2C%20United%20States&key=AIzaSyB8KmdLo1m3qJ7Hc07-NsHNhZgAG2A1Xjc"></iframe>
     </div>
   </div>
 
@@ -125,6 +95,15 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
   <script>
     $(document).foundation();
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('.image-slick').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnHover: false
+      });
+    });
   </script>
 </body>
 

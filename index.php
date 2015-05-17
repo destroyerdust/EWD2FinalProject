@@ -17,18 +17,26 @@
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <h1><a href="#">My Site</a></h1>
+          <h1><a href="#">Spin-it Cycle Shop</a></h1>
         </li>
         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
         <li class="toggle-topbar menu-icon">
           <a href="#">
-            <span>Menu</span>
+            <span></span>
           </a>
         </li>
       </ul>
 
       <section class="top-bar-section">
-        <!-- Right Nav Section -->
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li class="active"><a href="index.php">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="bikes.php">Bikes</a></li>
+          <li><a href="contact.php">Contact</a></li>
+        </ul>
+
+        <!-- Right Nav Section
         <ul class="right">
           <li class="active"><a href="#">Right Button Active</a></li>
           <li class="has-dropdown">
@@ -38,21 +46,10 @@
               <li class="active"><a href="#">Active link in dropdown</a></li>
             </ul>
           </li>
-        </ul>
+        </ul>-->
 
-        <!-- Left Nav Section -->
-        <ul class="left">
-          <li><a href="#">Left Nav Button</a></li>
-        </ul>
       </section>
     </nav>
-  </div>
-
-  <!-- Home Page Welcome -->
-  <div class="row">
-    <div class="large-12 columns">
-      <h1>Welcome to Foundation</h1>
-    </div>
   </div>
 
   <!-- Home Page Slick -->
@@ -68,6 +65,43 @@
     </div>
   </div>
 
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="callout panel">
+        <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 medium-6 columns">
+      <div class="callout panel">
+        <p>Six columns</p>
+      </div>
+    </div>
+    <div class="large-6 medium-6 columns">
+      <div class="callout panel">
+        <p>Six columns</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-4 medium-4 small-4 columns">
+      <div class="callout panel">
+        <p>Four columns</p>
+      </div>
+    </div>
+    <div class="large-4 medium-4 small-4 columns">
+      <div class="callout panel">
+        <p>Four columns</p>
+      </div>
+    </div>
+    <div class="large-4 medium-4 small-4 columns">
+      <div class="callout panel">
+        <p>Four columns</p>
+      </div>
+    </div>
+  </div>
+
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
@@ -78,7 +112,9 @@
   <script>
     $(document).ready(function() {
       $('.image-slick').slick({
-        autoplay: true
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnHover: false
       });
     });
   </script>

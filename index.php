@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Foundation | Welcome</title>
+  <title>Spin-it Cycle Shope | Welcome</title>
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="js/vendor/modernizr.js"></script>
 </head>
 
@@ -68,7 +70,8 @@
   <div class="row">
     <div class="large-12 columns">
       <div class="callout panel">
-        <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+        <p>
+          <strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
       </div>
     </div>
   </div>
@@ -101,6 +104,37 @@
       </div>
     </div>
   </div>
+
+  <footer class="footer">
+    <div class="row full-width">
+      <div class="small-12 medium-3 large-4 columns">
+        <i class="fa fa-bicycle"></i>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maiores alias ea sunt facilis impedit fuga dignissimos illo quaerat iure in nobis id quos, eaque nostrum! Unde, voluptates suscipit repudiandae!</p>
+      </div>
+      <div class="small-12 medium-3 large-4 columns">
+        <i class="fa fa-map-marker"></i>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit consequuntur at! Amet sed itaque nostrum, distinctio eveniet odio, id ipsam fuga quam minima cumque nobis veniam voluptates deserunt!</p>
+      </div>
+      <div class="small-6 medium-3 large-2 columns">
+        <h4>Site Map</h4>
+        <ul class="footer-links">
+          <li><a href="index.php">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="bikes.php">Bikes</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ's</a></li>
+          <ul>
+      </div>
+      <div class="small-6 medium-3 large-2 columns">
+        <h4>Follow Us</h4>
+        <ul class="footer-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <ul>
+      </div>
+    </div>
+  </footer>
 
 
   <script src="js/vendor/jquery.js"></script>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spin-it Cycle Shope | Welcome</title>
+  <title>Spin-it Cycle Shope | About Us</title>
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <!-- Fixed Header -->
+  <!-- Fixed Header Start -->
   <div class="fixed">
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
@@ -41,7 +41,9 @@
       </section>
     </nav>
   </div>
+  <!-- Header End -->
 
+  <!-- Content Start -->
   <div class="row">
     <div class="large-12 columns">
       <div class="callout panel">
@@ -57,7 +59,9 @@
       <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Pittsford%2C%20NY%2C%20United%20States&key=AIzaSyB8KmdLo1m3qJ7Hc07-NsHNhZgAG2A1Xjc"></iframe>
     </div>
   </div>
+  <!-- Content End -->
 
+  <!-- Footer Start -->
   <footer class="footer">
     <div class="row full-width">
       <div class="small-12 medium-3 large-4 columns">
@@ -88,7 +92,7 @@
       </div>
     </div>
   </footer>
-
+  <!-- Footer End -->
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>

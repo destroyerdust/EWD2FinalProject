@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Foundation | Bikes</title>
+  <title>Spin-it Cycle Shope | Contact Us</title>
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <!-- Fixed Header -->
+  <!-- Fixed Header Start -->
   <div class="fixed">
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
@@ -34,60 +34,22 @@
         <ul class="left">
           <li><a href="index.php">Home</a></li>
           <li><a href="about.php">About</a></li>
-          <li class="active"><a href="bikes.php">Bikes</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="bikes.php">Bikes</a></li>
+          <li class="active"><a href="contact.php">Contact</a></li>
           <li><a href="faq.php">FAQ</a></li>
         </ul>
-
-        <!-- Right Nav Section
-        <ul class="right">
-          <li class="active"><a href="#">Right Button Active</a></li>
-          <li class="has-dropdown">
-            <a href="#">Right Button Dropdown</a>
-            <ul class="dropdown">
-              <li><a href="#">First link in dropdown</a></li>
-              <li class="active"><a href="#">Active link in dropdown</a></li>
-            </ul>
-          </li>
-        </ul>-->
-
       </section>
     </nav>
   </div>
+  <!-- Header End -->
 
-  <!-- Home Page Welcome -->
-  <div class="row">
-    <div class="large-12 columns">
-      <h1>Welcome to Foundation</h1>
-    </div>
-  </div>
+  <!-- Content Start -->
 
-  <?php
-  $url=parse_url(getenv( "CLEARDB_DATABASE_URL"));
-  $server=$url[ "host"];
-  $username=$url[ "user"];
-  $password=$url[ "pass"];
-  $db=substr($url[ "path"], 1);
-  $conn=new mysqli($server, $username, $password, $db);
-  echo "Hello World. I will use you soon. This is a github deploy";
-  $conn -> close();
-  ?>
 
-  <div class="row">
-    <div class="small-12 medium-3 large-3 columns">
-      <img src="img/1-series.png">
-    </div>
-    <div class="small-12 medium-3 large-3 columns">
-      <img src="img/emonda.png">
-    </div>
-    <div class="small-12 medium-3 large-3 columns">
-      <img src="img/emonda-alr.png">
-    </div>
-    <div class="small-12 medium-3 large-3 columns">
-      <img src="img/madone.png">
-    </div>
-  </div>
 
+  <!-- Content End -->
+
+  <!-- Footer Start -->
   <footer class="footer">
     <div class="row full-width">
       <div class="small-12 medium-3 large-4 columns">
@@ -102,10 +64,10 @@
         <h4>Site Map</h4>
         <ul class="footer-links">
           <li><a href="index.php">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="about.php">About</a></li>
           <li><a href="bikes.php">Bikes</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">FAQ's</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <li><a href="faq.php">FAQ's</a></li>
           <ul>
       </div>
       <div class="small-6 medium-3 large-2 columns">
@@ -125,6 +87,15 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
   <script>
     $(document).foundation();
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('.image-slick').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnHover: false
+      });
+    });
   </script>
 </body>
 

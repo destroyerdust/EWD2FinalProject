@@ -44,7 +44,12 @@
   <!-- Header End -->
 
   <!-- Content Start -->
-
+  <!-- Contact Page map of Pittsford -->
+  <div class="row show-for-medium-up">
+    <div class="google-maps">
+      <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Pittsford%2C%20NY%2C%20United%20States&key=AIzaSyB8KmdLo1m3qJ7Hc07-NsHNhZgAG2A1Xjc"></iframe>
+    </div>
+  </div>
 
 
   <!-- Content End -->

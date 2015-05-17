@@ -45,18 +45,22 @@
 
   <!-- Content Start -->
   <div class="row">
-    <div class="large-12 columns">
-      <div class="callout panel">
-        <p>
-          <strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-      </div>
+    <div class="small-12 large-9 columns">
+      <p>Bacon ipsum dolor amet pork loin swine ribeye, flank capicola pork chop tenderloin pork belly short loin tongue t-bone strip steak ground round tail. Alcatra pork belly fatback meatball bresaola venison tongue kevin. Tri-tip bacon hamburger bresaola,
+        kevin corned beef spare ribs sirloin biltong turducken leberkas. Hamburger jowl doner shoulder cupim, pork chop pork belly ham hock shankle bresaola kielbasa frankfurter rump. Beef ribs picanha jowl, ham filet mignon prosciutto corned beef short
+        ribs. Sirloin shankle frankfurter pork belly ball tip, ground round chuck turkey.</p>
     </div>
-  </div>
-
-  <!-- About Page map of Pittsford -->
-  <div class="row show-for-medium-up">
-    <div class="google-maps">
-      <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Pittsford%2C%20NY%2C%20United%20States&key=AIzaSyB8KmdLo1m3qJ7Hc07-NsHNhZgAG2A1Xjc"></iframe>
+    <div class="small-12 large-3 columns show-for-large-up">
+      <ul class="vcard">
+        <li class="fn">Spin-it Cycle Shop</li>
+        <li class="street-address">123 Fake Street.</li>
+        <li class="locality">Pittsford</li>
+        <li>
+          <span class="state">New York</span>,
+          <span class="zip">14623</span>
+        </li>
+        <li class="email"><a href="#">spin-it@gmail.com</a></li>
+      </ul>
     </div>
   </div>
   <!-- Content End -->
@@ -76,10 +80,10 @@
         <h4>Site Map</h4>
         <ul class="footer-links">
           <li><a href="index.php">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="about.php">About</a></li>
           <li><a href="bikes.php">Bikes</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">FAQ's</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <li><a href="faq.php">FAQ's</a></li>
           <ul>
       </div>
       <div class="small-6 medium-3 large-2 columns">

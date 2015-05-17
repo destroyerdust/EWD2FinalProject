@@ -102,10 +102,10 @@
         <h4>Site Map</h4>
         <ul class="footer-links">
           <li><a href="index.php">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="about.php">About</a></li>
           <li><a href="bikes.php">Bikes</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">FAQ's</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <li><a href="faq.php">FAQ's</a></li>
           <ul>
       </div>
       <div class="small-6 medium-3 large-2 columns">

@@ -44,12 +44,14 @@
   <!-- Header End -->
 
   <!-- Content Start -->
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="callout panel">
-        <p>
-          <strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-      </div>
+  <div class="row testimonial">
+    <div class="small-12 large-9 columns">
+      <h1>content</h1>
+    </div>
+    <div class="small-12 large-3 columns">
+      <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Isaac Asimov</cite></blockquote>
+      <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Isaac Asimov</cite></blockquote>
+      <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Isaac Asimov</cite></blockquote>
     </div>
   </div>
   <!-- Content End -->

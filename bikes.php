@@ -72,6 +72,21 @@
   $conn -> close();
   ?>
 
+  <div class="row">
+    <div class="small-12 medium-3 large-3 columns">
+      <img src="img/1-series.png">
+    </div>
+    <div class="small-12 medium-3 large-3 columns">
+      <img src="img/emonda.png">
+    </div>
+    <div class="small-12 medium-3 large-3 columns">
+      <img src="img/emonda-alr.png">
+    </div>
+    <div class="small-12 medium-3 large-3 columns">
+      <img src="img/madone.png">
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="row full-width">
       <div class="small-12 medium-3 large-4 columns">

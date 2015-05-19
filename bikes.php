@@ -67,13 +67,13 @@
     <!-- LOCAL CONNECTION ONLY -->
     <?php
     $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
-    $server=$url "host"];
+    $server=$url["host"];
     $username=$url["user"];
     $password=$url["pass"];
     $db=substr($url["path"], 1);
     $conn=new mysqli($server, $username, $password, $db);
     $sql="SELECT bikeId, name, price, imgName FROM bike";
-    $result=mysqli_query($conn, $sql) or die( "RIP");
+    $result=mysqli_query($conn, $sql) or die("RIP");
     $num=mysqli_num_rows($result);
     if($num> 0) {
       while ($row = $result->fetch_assoc()) {

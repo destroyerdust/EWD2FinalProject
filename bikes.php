@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Foundation | Bikes</title>
+  <title>Spin-it Cycle Shop | Bikes</title>
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
@@ -58,74 +58,84 @@
   <!-- Home Page Welcome -->
   <div class="row">
     <div class="large-12 columns">
-      <h1>Welcome to Foundation</h1>
+      <h1>Our Bike Selection!</h1>
     </div>
   </div>
 
-  <?php
-  $url=parse_url(getenv( "CLEARDB_DATABASE_URL"));
-  $server=$url[ "host"];
-  $username=$url[ "user"];
-  $password=$url[ "pass"];
-  $db=substr($url[ "path"], 1);
-  $conn=new mysqli($server, $username, $password, $db);
-  echo "Hello World. I will use you soon. This is a github deploy";
-  $conn -> close();
-  ?>
 
   <div class="row">
-    <div class="small-12 medium-3 large-3 columns">
-      <img src="img/1-series.png">
+    <!-- LOCAL CONNECTION ONLY -->
+    <?php
+    $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+    $server=$url "host"];
+    $username=$url["user"];
+    $password=$url["pass"];
+    $db=substr($url["path"], 1);
+    $conn=new mysqli($server, $username, $password, $db);
+    $sql="SELECT bikeId, name, price, imgName FROM bike";
+    $result=mysqli_query($conn, $sql) or die( "RIP");
+    $num=mysqli_num_rows($result);
+    if($num> 0) {
+      while ($row = $result->fetch_assoc()) {
+        $bikeId = $row["bikeId"];
+        $name = $row["name"];
+        $price = $row["price"];
+        $imgName = $row["imgName"];
+        echo "<div class='small-12 medium-6 large-3 columns'>";
+          echo "<img src='img/$imgName'>";
+          echo "<ul class='pricing-table'>";
+            echo "<li class='title'>$name</li>";
+            echo "<li class='price'>$$price</li>";
+            echo "<li class='description'>Description</li>";
+            echo "<li class='bullet-item'>First Bullet</li>";
+            echo "<li class='bullet-item'>Second Bullet</li>";
+            echo "<li class='cta-button'><a class='button' href='#'>More Info</a></li>";
+          echo "</ul>";
+        echo "</div>";
+        }
+      }
+      $conn -> close();
+      ?>
     </div>
-    <div class="small-12 medium-3 large-3 columns">
-      <img src="img/emonda.png">
-    </div>
-    <div class="small-12 medium-3 large-3 columns">
-      <img src="img/emonda-alr.png">
-    </div>
-    <div class="small-12 medium-3 large-3 columns">
-      <img src="img/madone.png">
-    </div>
-  </div>
 
-  <footer class="footer">
-    <div class="row full-width">
-      <div class="small-12 medium-3 large-4 columns">
-        <i class="fa fa-bicycle"></i>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maiores alias ea sunt facilis impedit fuga dignissimos illo quaerat iure in nobis id quos, eaque nostrum! Unde, voluptates suscipit repudiandae!</p>
-      </div>
-      <div class="small-12 medium-3 large-4 columns">
-        <i class="fa fa-map-marker"></i>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit consequuntur at! Amet sed itaque nostrum, distinctio eveniet odio, id ipsam fuga quam minima cumque nobis veniam voluptates deserunt!</p>
-      </div>
-      <div class="small-6 medium-3 large-2 columns">
-        <h4>Site Map</h4>
-        <ul class="footer-links">
-          <li><a href="index.php">Home</a></li>
-          <li><a href="about.php">About</a></li>
-          <li><a href="bikes.php">Bikes</a></li>
-          <li><a href="contact.php">Contact</a></li>
-          <li><a href="faq.php">FAQ's</a></li>
-          <ul>
-      </div>
-      <div class="small-6 medium-3 large-2 columns">
-        <h4>Follow Us</h4>
-        <ul class="footer-links">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-          <ul>
-      </div>
-    </div>
-  </footer>
+      <footer class="footer">
+        <div class="row full-width">
+          <div class="small-12 medium-3 large-4 columns">
+            <i class="fa fa-bicycle"></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maiores alias ea sunt facilis impedit fuga dignissimos illo quaerat iure in nobis id quos, eaque nostrum! Unde, voluptates suscipit repudiandae!</p>
+          </div>
+          <div class="small-12 medium-3 large-4 columns">
+            <i class="fa fa-map-marker"></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit consequuntur at! Amet sed itaque nostrum, distinctio eveniet odio, id ipsam fuga quam minima cumque nobis veniam voluptates deserunt!</p>
+          </div>
+          <div class="small-6 medium-3 large-2 columns">
+            <h4>Site Map</h4>
+            <ul class="footer-links">
+              <li><a href="index.php">Home</a></li>
+              <li><a href="about.php">About</a></li>
+              <li><a href="bikes.php">Bikes</a></li>
+              <li><a href="contact.php">Contact</a></li>
+              <li><a href="faq.php">FAQ's</a></li>
+              <ul>
+          </div>
+          <div class="small-6 medium-3 large-2 columns">
+            <h4>Follow Us</h4>
+            <ul class="footer-links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <ul>
+          </div>
+        </div>
+      </footer>
 
 
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/foundation.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
-</body>
+      <script src="js/vendor/jquery.js"></script>
+      <script src="js/foundation.min.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+      <script>
+        $(document).foundation();
+      </script>
+    </body>
 
-</html>
+    </html>

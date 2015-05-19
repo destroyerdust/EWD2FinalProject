@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spin-it Cycle Shop | About Us</title>
+  <title>Spin-it Cycle Shop | Contact Us</title>
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
@@ -33,9 +33,9 @@
         <!-- Left Nav Section -->
         <ul class="left">
           <li><a href="index.php">Home</a></li>
-          <li class="active"><a href="about.php">About</a></li>
+          <li><a href="about.php">About</a></li>
           <li><a href="bikes.php">Bikes</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li class="active"><a href="contact.php">Contact</a></li>
           <li><a href="faq.php">FAQ</a></li>
         </ul>
       </section>
@@ -45,29 +45,46 @@
 
   <!-- Content Start -->
   <div class="row">
-    <div class="large-12 columns">
-      <h1>About Us!</h1>
-    </div>
+    Thank you <?php echo $_POST["name"]; ?> for your comment!
+
+    <?php
+      // LOCAL ONLY
+      $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+      $server=$url["host"];
+      $username=$url["user"];
+      $password=$url["pass"];
+      $db=substr($url["path"], 1);
+      $conn = new mysqli($server, $username, $password, $db);
+
+
+      $name = $_POST["name"];
+      $email = $_POST["email"];
+      $comment = $_POST["comment"];
+
+      $nameEscaped = "'" . $conn->real_escape_string($name) . "'";
+      //echo "Name Escaped: '$nameEscaped'";
+      $emailEscaped = "'" . $conn->real_escape_string($email) . "'";
+      //echo "Email Escaped: '$emailEscaped'";
+      $commentEscaped = "'" . $conn->real_escape_string($comment) . "'";
+      //echo "Comment Escaped: '$commentEscaped'";
+      $sql = "INSERT INTO contact (name, email, comment) VALUES ($nameEscaped, $emailEscaped, $commentEscaped)";
+      //echo "SQL: '$sql'";
+
+      if($conn->query($sql) === false) {
+        trigger_error('Wrong SQL: ' . $sql . ' Error: ' . $conn->error, E_USER_ERROR);
+      } else {
+        $last_inserted_id = $conn->insert_id;
+        $affected_rows = $conn->affected_rows;
+        //echo "Last Id: '$last_inserted_id'";
+        //echo "Affected Rows: '$affected_rows'";
+      };
+      header("refresh:5; url=contact.php");
+     ?>
+
+    <br />
+    This page should redirect in 5 seconds. Click <a href="contact.php">here</a> if it doesn't.
   </div>
-  <div class="row">
-    <div class="small-12 large-9 columns">
-      <p>Bacon ipsum dolor amet pork loin swine ribeye, flank capicola pork chop tenderloin pork belly short loin tongue t-bone strip steak ground round tail. Alcatra pork belly fatback meatball bresaola venison tongue kevin. Tri-tip bacon hamburger bresaola,
-        kevin corned beef spare ribs sirloin biltong turducken leberkas. Hamburger jowl doner shoulder cupim, pork chop pork belly ham hock shankle bresaola kielbasa frankfurter rump. Beef ribs picanha jowl, ham filet mignon prosciutto corned beef short
-        ribs. Sirloin shankle frankfurter pork belly ball tip, ground round chuck turkey.</p>
-    </div>
-    <div class="small-12 large-3 columns show-for-large-up">
-      <ul class="vcard">
-        <li class="fn">Spin-it Cycle Shop</li>
-        <li class="street-address">123 Fake Street.</li>
-        <li class="locality">Pittsford</li>
-        <li>
-          <span class="state">New York</span>,
-          <span class="zip">14623</span>
-        </li>
-        <li class="email"><a href="#">spin-it@gmail.com</a></li>
-      </ul>
-    </div>
-  </div>
+
   <!-- Content End -->
 
   <!-- Footer Start -->
@@ -101,22 +118,13 @@
       </div>
     </div>
   </footer>
-  <!-- Footer End -->
+
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
   <script>
     $(document).foundation();
-  </script>
-  <script>
-    $(document).ready(function() {
-      $('.image-slick').slick({
-        autoplay: true,
-        autoplaySpeed: 5000,
-        pauseOnHover: false
-      });
-    });
   </script>
 </body>
 

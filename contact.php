@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spin-it Cycle Shope | Contact Us</title>
+  <title>Spin-it Cycle Shop | Contact Us</title>
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
@@ -58,25 +58,25 @@
         short loin. Chuck pork kielbasa bresaola. Meatloaf cow bresaola chuck tri-tip, hamburger swine venison turkey doner prosciutto flank t-bone jerky.</p>
     </div>
     <div class="small-12 large-4 columns">
-      <form data-abide>
+      <form data-abide method="post" action="contact_thankyou.php">
         <div class="name-field">
           <label>Your name
             <small>required</small>
-            <input type="text" required pattern="[a-zA-Z]+">
+            <input type="text" name="name" required pattern="[a-zA-Z]+">
           </label>
           <small class="error">Name is required and must be a string.</small>
         </div>
         <div class="email-field">
           <label>Email
             <small>required</small>
-            <input type="email" required>
+            <input type="email" name="email" required>
           </label>
           <small class="error">An email address is required.</small>
         </div>
         <div class="text-field">
           <label>Comment
             <small>required</small>
-            <textarea type="text" required pattern="[a-zA-Z]+"></textarea>
+            <textarea type="text" name="comment" required pattern="[a-zA-Z]+"></textarea>
           </label>
           <small class="error">Comment is required and must be a string.</small>
         </div>
@@ -127,15 +127,6 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
   <script>
     $(document).foundation();
-  </script>
-  <script>
-    $(document).ready(function() {
-      $('.image-slick').slick({
-        autoplay: true,
-        autoplaySpeed: 5000,
-        pauseOnHover: false
-      });
-    });
   </script>
 </body>
 

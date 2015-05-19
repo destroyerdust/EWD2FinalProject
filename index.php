@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spin-it Cycle Shope | Welcome</title>
+  <title>Spin-it Cycle Shop | Welcome</title>
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />

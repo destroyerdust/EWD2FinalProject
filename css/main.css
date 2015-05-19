@@ -12,6 +12,9 @@
 .footer i {
   font-size: 100px;
 }
+body > footer > div > div:nth-child(1) > p:nth-child(3) > i {
+  font-size: 13px;
+}
 .footer h4 {
   color: #fff;
   font-size: 1rem;

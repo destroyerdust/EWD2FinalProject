@@ -2,11 +2,17 @@
   <div class="row full-width">
     <div class="small-12 medium-3 large-4 columns">
       <i class="fa fa-bicycle"></i>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maiores alias ea sunt facilis impedit fuga dignissimos illo quaerat iure in nobis id quos, eaque nostrum! Unde, voluptates suscipit repudiandae!</p>
+      <p>Spin-it Cycle Shop is the primary source of competive and casual bikes in the greater Rochester area!</p>
+      <p>Site created by Stylz. <i class="fa fa-copyright"></i> 2015</p>
     </div>
     <div class="small-12 medium-3 large-4 columns">
       <i class="fa fa-map-marker"></i>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit consequuntur at! Amet sed itaque nostrum, distinctio eveniet odio, id ipsam fuga quam minima cumque nobis veniam voluptates deserunt!</p>
+      <br/>
+      123 Fake Street.
+      <br/>
+      Pittsford, NY 14623
+      <br/>
+      spin-it@gmail.com
     </div>
     <div class="small-6 medium-3 large-2 columns">
       <h4>Site Map</h4>

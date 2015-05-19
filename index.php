@@ -69,28 +69,23 @@
   <div class="row">
     <div class="small-12 large-6 columns">
       <h2>Hello</h2>
-      <p>Bacon ipsum dolor amet swine tongue prosciutto doner. Bacon bresaola alcatra prosciutto shankle swine pork sirloin drumstick ham hock salami pork loin kevin jerky. Tri-tip bresaola tail, filet mignon fatback pastrami ham kielbasa ribeye tongue meatloaf.
-        Leberkas pork belly bresaola boudin ribeye, beef ribs prosciutto swine shank hamburger landjaeger spare ribs picanha. Rump boudin pastrami, filet mignon frankfurter leberkas tail. Chuck jerky corned beef ribeye, prosciutto doner picanha.</p>
+      <p>Welcome to Spin-it Cycle Shop's new website! We all here are welcome to show you our products without you having to come to our store!</p>
+      <p>Feel free to browse the bikes in the Bikes page (Link on top)!</p>
 
-      <p>Landjaeger andouille kevin meatball. Bacon brisket beef ribs frankfurter ham boudin chuck shankle meatball turducken doner spare ribs meatloaf pork chop. Flank biltong hamburger shoulder chuck bresaola jowl t-bone drumstick spare ribs tenderloin
-        kevin pastrami ribeye. Bresaola ham hock venison, pork loin tongue t-bone frankfurter tail pig.</p>
+      <p>You can also check out the other areas of the website to further understand our story and how to contact us!</p>
 
       <hr/>
 
-      <h2>More Content wut!</h2>
-      <p>Bacon ipsum dolor amet boudin ribeye pastrami doner shank, spare ribs corned beef. Capicola flank beef, jerky ball tip ham rump alcatra tenderloin turkey tail. Hamburger shoulder beef frankfurter landjaeger corned beef chuck. Picanha turkey swine
-        strip steak meatball pork belly pork loin brisket jowl ribeye ham hock kevin. Beef ribs tail short ribs, salami pork belly turkey brisket meatball pig.</p>
+      <h2>New Products!</h2>
+      <p>Our team has been at hard at work to aquire new products to offer our customers. Check them out at our bikes page!</p>
     </div>
     <div class="small-12 large-6 columns">
-      <h2>BACON!</h2>
-      <p>Bacon ipsum dolor amet swine tongue prosciutto doner. Bacon bresaola alcatra prosciutto shankle swine pork sirloin drumstick ham hock salami pork loin kevin jerky. Tri-tip bresaola tail, filet mignon fatback pastrami ham kielbasa ribeye tongue meatloaf.
-        Leberkas pork belly bresaola boudin ribeye, beef ribs prosciutto swine shank hamburger landjaeger spare ribs picanha. Rump boudin pastrami, filet mignon frankfurter leberkas tail. Chuck jerky corned beef ribeye, prosciutto doner picanha.</p>
-
-      <hr/>
-      <h2>What is this!?!?</h2>
-      <p>Bacon ipsum dolor amet pork loin swine ribeye, flank capicola pork chop tenderloin pork belly short loin tongue t-bone strip steak ground round tail. Alcatra pork belly fatback meatball bresaola venison tongue kevin. Tri-tip bacon hamburger bresaola,
-        kevin corned beef spare ribs sirloin biltong turducken leberkas. Hamburger jowl doner shoulder cupim, pork chop pork belly ham hock shankle bresaola kielbasa frankfurter rump. Beef ribs picanha jowl, ham filet mignon prosciutto corned beef short
-        ribs. Sirloin shankle frankfurter pork belly ball tip, ground round chuck turkey.</p>
+      <h2>How Often Should You Replace Your Chain?</h2>
+      <p>The short answer here is, "Probably more often than you think." A bike chains job is to transfer every watt of power from your cranks to your back wheel, and that's a big undertaking. With performance bikes becoming lighter, and cassettes offering
+        more gears in the same amount of spacing (i.e thinner chains), it's not uncommon for heavier riders to wear through a chain in as little as 1,000 miles. That's just a few months for someone who rides every weekend.</p>
+      <p>Rider weight, terrain, even wheel size and chainstay length can all affect the life expectancy of your chain so it's hard for us to set an exact mileage number for replacement.</p>
+      <p>Although there is no cut and dry length of time a road bike chain will last, there are several tools to measure chain wear, and some easy ways to extend your chains life. The best way is to maintain a clean and lubricated drivetrain. This means
+        cleaning the grime off of your chain, and lubricating it every three or four rides. We love Rock & Roll Road chainlube, and a small bottle will easily last six months.</p>
 
     </div>
   </div>

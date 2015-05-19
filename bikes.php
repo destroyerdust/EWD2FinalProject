@@ -72,30 +72,53 @@
     $password=$url["pass"];
     $db=substr($url["path"], 1);
     $conn=new mysqli($server, $username, $password, $db);
-    $sql="SELECT bikeId, name, price, imgName FROM bike";
-    $result=mysqli_query($conn, $sql) or die("RIP");
-    $num=mysqli_num_rows($result);
-    if($num> 0) {
+    // ONLY COPY AFTER THIS
+    $sql = "SELECT bikeId, name, price, imgName, description, feature1, feature2, feature3, feature4 FROM bike";
+    $result = mysqli_query($conn, $sql) or die("RIP");
+    $num = mysqli_num_rows($result);
+
+    // 4 Item Incrementor
+    $i = 0;
+
+    if($num > 0) {
       while ($row = $result->fetch_assoc()) {
         $bikeId = $row["bikeId"];
         $name = $row["name"];
         $price = $row["price"];
         $imgName = $row["imgName"];
+        $description = $row["description"];
+        $feature1 = $row["feature1"];
+        $feature2 = $row["feature2"];
+        $feature3 = $row["feature3"];
+        $feature4 = $row["feature4"];
+
+        if ($i == 4) {
+          echo "</div>";
+          echo "<div class='row'>";
+          $i = 0;
+        }
+
         echo "<div class='small-12 medium-6 large-3 columns'>";
           echo "<img src='img/$imgName'>";
           echo "<ul class='pricing-table'>";
             echo "<li class='title'>$name</li>";
             echo "<li class='price'>$$price</li>";
-            echo "<li class='description'>Description</li>";
-            echo "<li class='bullet-item'>First Bullet</li>";
-            echo "<li class='bullet-item'>Second Bullet</li>";
+            echo "<li class='description'>$description</li>";
+            echo "<li class='bullet-item'>$feature1</li>";
+            echo "<li class='bullet-item'>$feature2</li>";
+            echo "<li class='bullet-item'>$feature3</li>";
+            echo "<li class='bullet-item'>$feature4</li>";
             echo "<li class='cta-button'><a class='button' href='#'>More Info</a></li>";
           echo "</ul>";
         echo "</div>";
-        }
+
+        $i++;
       }
-      $conn -> close();
-      ?>
+      echo "</div>";
+    }
+
+    $conn -> close();
+    ?>
     </div>
 
     <!-- Include Footer -->

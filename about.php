@@ -51,9 +51,8 @@
   </div>
   <div class="row">
     <div class="small-12 large-9 columns">
-      <p>Bacon ipsum dolor amet pork loin swine ribeye, flank capicola pork chop tenderloin pork belly short loin tongue t-bone strip steak ground round tail. Alcatra pork belly fatback meatball bresaola venison tongue kevin. Tri-tip bacon hamburger bresaola,
-        kevin corned beef spare ribs sirloin biltong turducken leberkas. Hamburger jowl doner shoulder cupim, pork chop pork belly ham hock shankle bresaola kielbasa frankfurter rump. Beef ribs picanha jowl, ham filet mignon prosciutto corned beef short
-        ribs. Sirloin shankle frankfurter pork belly ball tip, ground round chuck turkey.</p>
+      <p>We don’t just sell bikes! We are bikers! We have a combined 76 years of biking experience. We are always happy to answer your biking questions, whether you are just starting out or have been biking for years.</p>
+      <p>Some of our staff have competed in road bicycle racing, cyclo-cross, mountain bike racing and more.</p>
     </div>
     <div class="small-12 large-3 columns show-for-large-up">
       <ul class="vcard">
@@ -71,7 +70,7 @@
   <!-- Content End -->
 
   <!-- Include Footer -->
-  <?php require("footer.php"); ?>
+  <?php require( "footer.php"); ?>
   <!-- End Footer -->
 
   <script src="js/vendor/jquery.js"></script>

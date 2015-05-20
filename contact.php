@@ -52,10 +52,15 @@
   </div>
 
   <div class="row">
-    <div class="small-12 large-8 columns">
+    <div class="small-12">
       <h1>Contact Us!</h1>
-      <p>Bacon ipsum dolor amet pork loin kielbasa cow fatback, swine hamburger leberkas drumstick salami turducken landjaeger biltong. Porchetta pork loin tongue bacon pork belly andouille alcatra drumstick shank shankle filet mignon picanha kevin turkey
-        short loin. Chuck pork kielbasa bresaola. Meatloaf cow bresaola chuck tri-tip, hamburger swine venison turkey doner prosciutto flank t-bone jerky.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 large-8 columns">
+      <p>We would love to hear from you!  Whether it’s questions about our bikes or bike stories!</p>
+      <p>Have you used one of our bikes in a competition or just love to get out and bike?  Pics are welcome also!</p>
     </div>
     <div class="small-12 large-4 columns">
       <form data-abide method="post" action="contact_thankyou.php">

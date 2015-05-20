@@ -69,19 +69,19 @@
   <div class="row">
     <div class="small-12 large-6 columns">
       <h2>Hello</h2>
-      <p>Welcome to Spin-it Cycle Shop's new website! We all here are welcome to show you our products without you having to come to our store!</p>
-      <p>Feel free to browse the bikes in the Bikes page (Link on top)!</p>
+      <p>Welcome to Spin-it Cycle Shop's new website! You are welcome to browse our products without having to come to our store!</p>
+      <p>Check out our great selection of bikes on the <a href="bikes.php">“Bikes”</a> page, just click the link on top</p>
 
-      <p>You can also check out the other areas of the website to further understand our story and how to contact us!</p>
+      <p>Check out the other areas of our website to learn about us and how to contact us!</p>
 
       <hr/>
 
       <h2>New Products!</h2>
-      <p>Our team has been at hard at work to aquire new products to offer our customers. Check them out at our bikes page!</p>
+      <p>Our team is always hard at work looking for new products to offer to our customers, so check back with us often for new products!</p>
     </div>
     <div class="small-12 large-6 columns">
       <h2>How Often Should You Replace Your Chain?</h2>
-      <p>The short answer here is, "Probably more often than you think." A bike chains job is to transfer every watt of power from your cranks to your back wheel, and that's a big undertaking. With performance bikes becoming lighter, and cassettes offering
+      <p>The short answer here is, "Probably more often than you think." A bike chains job is to transfer every watt of power when you peddle to your back wheel, and that's a big undertaking. With performance bikes becoming lighter, and cassettes offering
         more gears in the same amount of spacing (i.e thinner chains), it's not uncommon for heavier riders to wear through a chain in as little as 1,000 miles. That's just a few months for someone who rides every weekend.</p>
       <p>Rider weight, terrain, even wheel size and chainstay length can all affect the life expectancy of your chain so it's hard for us to set an exact mileage number for replacement.</p>
       <p>Although there is no cut and dry length of time a road bike chain will last, there are several tools to measure chain wear, and some easy ways to extend your chains life. The best way is to maintain a clean and lubricated drivetrain. This means
